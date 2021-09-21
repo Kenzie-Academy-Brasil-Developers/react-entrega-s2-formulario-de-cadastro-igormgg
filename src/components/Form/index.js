@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useHistory } from "react-router";
+import "./styles.css";
 
 const Form = ({ setUserInfo }) => {
   const history = useHistory();
@@ -41,7 +42,7 @@ const Form = ({ setUserInfo }) => {
   };
 
   return (
-    <div>
+    <div className="container1">
       <form onSubmit={handleSubmit(handleForm)}>
         <div>
           <TextField
@@ -74,6 +75,7 @@ const Form = ({ setUserInfo }) => {
             variant="outlined"
             size="small"
             color="primary"
+            type="password"
           />
         </div>
         <div>
@@ -85,6 +87,7 @@ const Form = ({ setUserInfo }) => {
             variant="outlined"
             size="small"
             color="primary"
+            type="password"
           />
         </div>
         <Button type="submit" variant="contained" color="primary">

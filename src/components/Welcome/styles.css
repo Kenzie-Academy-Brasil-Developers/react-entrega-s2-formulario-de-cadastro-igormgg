@@ -1,0 +1,24 @@
+.container2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.container2 h1 {
+  font-size: calc(10px + 2vmin);
+}
+
+.container2 h2 {
+  font-size: calc(10px + 1vmin);
+}
+
+.container2 button {
+  margin-top: 20px;
+}
