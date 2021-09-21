@@ -14,7 +14,7 @@ function App() {
       <body>
         <Switch>
           <Route exact path="/">
-            <Form userInfo={userInfo} setUserInfo={setUserInfo} />
+            <Form setUserInfo={setUserInfo} />
           </Route>
           <Route path="/:id">
             <Welcome userInfo={userInfo} />

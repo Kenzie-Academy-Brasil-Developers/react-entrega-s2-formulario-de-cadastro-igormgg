@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useHistory } from "react-router";
 
-const Form = ({ userInfo, setUserInfo }) => {
+const Form = ({ setUserInfo }) => {
   const history = useHistory();
 
   const schema = yup.object().shape({
